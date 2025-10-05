@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DreamHomes — Apartment Sales</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Мой CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!--  NAVBAR -->
+  <!-- тут логотип и ссылки. на маленьком экране всё сворачивается в бургер -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">🏡 DreamHomes</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#apartments">Apartments</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--  HERO SECTION -->
+  <!-- сюда можно вставить фон через css, типа вид города или интерьера -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Find Your Dream Apartment</h1>
+      <p>Discover beautiful apartments across megacities 💫</p>
+      <a href="#apartments" class="btn btn-primary">Explore Now</a>
+    </div>
+  </section>
+
+  <!--  PART 1: Media Queries (Typography + Layout) -->
+  <section class="container text-center my-5">
+  <h2>Your dream become true with Us.</h2>
+  <p class="responsive-text">
+    Meet the Luxary appartments selling company
+  </p>
+</section>
+
+<section class="container my-5">
+  <h3 class="text-center mb-4">Сities where we sell apartments</h3>
+
+  <div class="responsive-boxes">
+    <!-- карточка 1 -->
+    <div class="city-card">
+      <!-- сюда вставь фотку города-->
+      <img src="https://i.guim.co.uk/img/media/c41374f2d1313cd564257607c476061771a8f8ed/606_420_4626_2776/master/4626.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=e62fc3a3d380b2e4bc73f644cfd8e700" alt="Алматы" class="city-img">
+      <h4>New York City 🏙</h4>
+      <p>Discover luxury penthouses with breathtaking skyline views. Designed for those who value privacy, art, and the rhythm of the world’s most vibrant city.</p>
+    </div>
+
+    <!-- карточка 2 -->
+    <div class="city-card">
+      <!-- сюда вставь фотку  -->
+      <img src="https://dermamedical.co.uk/wp-content/uploads/2023/03/london_00144.png" alt="Астана" class="city-img">
+      <h4>London</h4>
+      <p>Elegant townhouses and modern riverside apartments in the heart of London. A perfect balance between timeless architecture and contemporary comfort.</p>
+    </div>
+
+    <!--  карточка 3 -->
+    <div class="city-card">
+      <!-- сюда вставь фотку  -->
+      <img src="https://4kwallpapers.com/images/wallpapers/shanghai-city-cityscape-night-city-city-lights-aerial-view-2880x1800-8851.jpg" alt="Шымкент" class="city-img">
+      <h4>Shanghai</h4>
+      <p>Experience futuristic living in the city that never sleeps. Our premium residences redefine luxury through innovation, technology, and stunning design.</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- 🧩 PART 2: Bootstrap Grid (12-column) -->
+  <section id="apartments" class="container my-5">
+    <h2 class="text-center mb-4">Featured Apartments</h2>
+    <div class="row g-4">
+      <!-- тут вставляешь СВОИ ФОТО квартир -->
+      <!-- каждая карточка занимает 4 колонки на десктопе, 6 на планшете, 12 на мобилке -->
+
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card">
+          <!-- вставь сюда URL фото -->
+          <img src="https://media.vrbo.com/lodging/109000000/108960000/108950300/108950209/2ad1b583.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill" class="card-img-top" alt="Apartment 1">
+          <div class="card-body">
+            <h5 class="card-title">Modern Apartment</h5>
+            <p class="card-text">2-bedroom apartment in city center. Great view and cozy vibe.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card">
+          <img src="https://images.prismic.io/11prop-blog/aJSGFKTt2nPbZ9Hg_PalmJumeirahluxurypenthouseaerialview.jpg?auto=format,compress" class="card-img-top" alt="Apartment 2">
+          <div class="card-body">
+            <h5 class="card-title">Luxury Penthouse</h5>
+            <p class="card-text">Spacious penthouse with terrace and smart home system.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card">
+          <img src="https://www.interiorzine.com/wp-content/uploads/2017/11/50-ways-to-make-a-small-space-more-livable.jpg" class="card-img-top" alt="Apartment 3">
+          <div class="card-body">
+            <h5 class="card-title">Cozy Studio</h5>
+            <p class="card-text">Small but stylish studio — perfect for students or singles.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  PART 3: Combined Portfolio Page -->
+  <section id="about" class="container my-5">
+    <div class="row">
+      <!-- левая часть (портфолио проектов) -->
+      <div class="col-lg-8 col-md-7 col-sm-12">
+        <h3>Portfolio Projects</h3>
+        <div class="row g-4 mt-3">
+          <div class="col-md-6">
+            <div class="card">
+              <!-- вставь сюда фото -->
+              <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/359517211.jpg?k=e3cd18a5c7d293038880d899ef240b640b347942dabd2f647eeddd9d435c2d1f&o=&hp=1" class="card-img-top" alt="Project 1">
+              <div class="card-body">
+                <h5 class="card-title">Family Apartment</h5>
+                <p class="card-text">Beautiful family apartment with garden.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <img src="https://i.pinimg.com/736x/2b/4c/5f/2b4c5f905d1fa74d6b00304ace29194c.jpg" class="card-img-top" alt="Project 2">
+              <div class="card-body">
+                <h5 class="card-title">Modern Loft</h5>
+                <p class="card-text">Open-space loft with panoramic windows and high ceilings.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- правая часть (контакты и инфо) -->
+      <div class="col-lg-4 col-md-5 col-sm-12 mt-4 mt-md-0">
+        <h3>Contact Info</h3>
+        <p>📍 main office:NYC,USA</p>
+        <p>📞 +1 332 123 4567</p>
+        <p>✉️ dreamhomes@mail.com</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ⚙️ FOOTER -->
+  <footer class="text-center py-3 bg-light mt-5">
+    <p class="mb-0">© 2025 DreamHomes | All Rights Reserved</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

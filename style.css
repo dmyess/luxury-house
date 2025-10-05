@@ -1,0 +1,90 @@
+/* --- hero секция --- */
+.hero {
+  background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') no-repeat center center/cover;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* --- responsive boxes (part 1) --- */
+.responsive-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.box {
+  background-color: #e5e5e5;
+  border-radius: 10px;
+  padding: 40px;
+  flex: 1 1 250px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* --- responsive typography example --- */
+.responsive-text {
+  font-size: 16px;
+}
+
+/* --- media queries (part 1 tasks) --- */
+/* ✨ стиль для карточек городов */
+.responsive-boxes {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); /* 12 колонок — по заданию */
+  gap: 20px;
+}
+
+.city-card {
+  grid-column: span 4; /* каждая карточка занимает 4 колонки — итого 3 карточки в ряд */
+  background-color: #f8f8f8;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.3s ease;
+}
+
+.city-card:hover {
+  transform: translateY(-5px);
+}
+
+.city-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+/* 📱 адаптивка: чтобы на телефоне карточки шли в один столбик */
+@media (max-width: 768px) {
+  .city-card {
+    grid-column: span 12;
+  }
+}
+
+
+/* --- portfolio section --- */
+.card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+footer {
+  font-size: 14px;
+}
